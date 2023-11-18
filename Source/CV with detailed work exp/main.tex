@@ -218,14 +218,15 @@ conducting research focusing on understanding and improving user experiences in 
             \resumeItem{\textbf{Technologies:} Python, Flask, JavaScript, TypeScript, React.js, MySQL, MongoDB, Alembic, Celery, Elasticsearch}
         \resumeItemListEnd
         \resumeSubSubheading
-            {Asset Renditions}{May 2022 -- October 2022}
+            {Asset Renditions (AR)}{May 2022 -- October 2022}
             \resumeItemListStart
-                \resumeItem{Worked on implementing and maintaining a feature Asset Rendition.}
-                \resumeItem{Built three services to generate asset renditions using the given specifications.}
-                \resumeItem{Implemented stateless generators to scale horizontally and integrated asynchronous messaging for decoupling and scaling.}
+                \resumeItem{Worked on implementing and maintaining a feature Asset Rendition. This feature allows users to pre-define “Rendition types”, using which whenever users upload a new asset, new “Renditions” of that asset are automatically generated in the background. Example use-case: a user may define two image rendition types- 1. Facebook- 1080*720 crop and Instagram-  720*720 crop. Then whenever the user uploads an image asset, two cropped images will automatically be generated with the given specifications. }
+                \resumeItem{Implemented logging schemes by combining multiple services to enable users and developers to diagnose and debug errors.}
+                \resumeItem{Built three services to generate asset renditions using the given specifications including image and video generators.}
+                \resumeItem{Implemented stateless generators to scale horizontally and integrated asynchronous messaging for decoupling and scaling, for efficiency.}
                 \resumeItem{Integrated the Rendition Service with the local development environment for developers.}
-                \resumeItem{Implemented logging schemes to enable debugging by combining multiple services.}
-                \resumeItem{Technologies: Python, FastAPI, MySQL, PostgreSQL, Docker, Kubernetes, Message Queue}
+                
+                \resumeItem{\textbf{Technologies:} Python, FastAPI, MySQL, PostgreSQL, Docker, Kubernetes, Message Queue}
             \resumeItemListEnd
   \resumeSubHeadingListEnd
  
